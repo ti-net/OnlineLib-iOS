@@ -40,6 +40,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)saveVisitorId:(NSString*)saveStr;
 -(NSString*)getVisitorId;
 
+//外部Id
+- (void)saveVisitorExternalId:(NSString*)saveStr;
+-(NSString*)getVisitorExternalId;
+
 //用户名称
 - (void)saveVisitorName:(NSString*)saveStr;
 -(NSString*)getVisitorName;
@@ -80,9 +84,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)saveAppId:(NSString*)saveStr;
 -(NSString*)getAppId;
 
-// 存储会话状态
-- (void)saveMainUniqueIdRunningStatus:(NSString*)saveStr runningStatus:(NSString*)runningStatus;
--(NSString*)getMainUniqueIdRunningStatus:(NSString*)mainUniqueId;
 
 // 存储AppSetting全局配置信息
 - (void)saveAppSetting:(NSString*)appSetting;
