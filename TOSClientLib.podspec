@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TOSClientLib'
-  s.version          = '2.0.5'
+  s.version          = '2.4.3'
   s.summary          = 'TOSClientLib 集成在线客服SDK'
 
 # This description is used to generate tags and improve search results.
@@ -25,13 +25,13 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'zhaoyan' => 'a18810583594@163.com' }
   s.source           = { :git => 'https://github.com/ti-net/OnlineLib-iOS.git', :tag => s.version.to_s }
-  
-  s.ios.deployment_target = '9.0'
+
+  s.ios.deployment_target = '12.0'
 
   s.resource      = 'TOSClient.bundle'
   s.vendored_frameworks  = "TOSClientLib.framework"
-  s.pod_target_xcconfig = {'VALID_ARCHS'=>'armv7 x86_64 arm64 armv7s'}
-  
+  s.pod_target_xcconfig = {'VALID_ARCHS'=>'x86_64 arm64'}
+
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
