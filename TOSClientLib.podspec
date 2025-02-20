@@ -30,10 +30,8 @@ TODO: Add long description of the pod here.
 
   s.resource      = 'TOSClient.bundle'
   s.vendored_frameworks  = "TOSClientLib.framework"
-  s.pod_target_xcconfig = {
-	'VALID_ARCHS'=>'x86_64 arm64',
-	'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 x86_64'
-	}
+  s.pod_target_xcconfig = {'VALID_ARCHS'=>'x86_64 arm64','EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
